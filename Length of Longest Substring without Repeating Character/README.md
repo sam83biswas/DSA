@@ -1,20 +1,20 @@
-Problem Statement :
+**Problem Statement :**
 Given a string s, find the length of the longest substring without repeating characters.
 
  
-Example 1:
+**Example 1:**
 
 Input: s = "abcabcbb"
 Output: 3
 Explanation: The answer is "abc", with the length of 3.
 
-Example 2:
+**Example 2:**
 
 Input: s = "bbbbb"
 Output: 1
 Explanation: The answer is "b", with the length of 1.
 
-Example 3:
+**Example 3:**
 
 Input: s = "pwwkew"
 Output: 3
@@ -22,7 +22,7 @@ Output: 3
 Explanation: The answer is "wke", with the length of 3.
 Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
  
-Constraints:
+**Constraints:**
 
 0 <= s.length <= 5 * 104
 s consists of English letters, digits, symbols and spaces.
@@ -45,7 +45,7 @@ strLen keeps track of the maximum length of substrings found without repeating c
 ans is a frequency array of size 256 (to accommodate all ASCII characters), initialized to 0.
 
 
-**Sliding Window Mechanism:******
+**Sliding Window Mechanism:**
 
 
 The end pointer expands the window by moving forward.
@@ -66,3 +66,8 @@ Continue expanding the window and updating the maximum length until the end poin
 
 Finally, return strLen as the length of the longest substring without repeating characters.
 
+
+**TC : O(n)
+SC : O(1)
+
+**
