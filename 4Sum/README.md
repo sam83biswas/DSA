@@ -33,9 +33,11 @@ Output: [[2,2,2,2]]
 
 
 **Intuition**
+
 The problem is to find all unique quadruplets in the array that sum up to a given target. A good approach to solving this problem is to first sort the array, which allows us to use the two-pointer technique efficiently.
 
 **Approach**
+
 Sort the Array: Sorting helps in using two-pointer technique and avoiding duplicates.
 
 Nested Loops: Use two nested loops to fix the first two elements of the quadruplet. Let's denote these indices by i and j.
