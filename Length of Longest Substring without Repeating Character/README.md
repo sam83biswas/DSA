@@ -28,13 +28,13 @@ Constraints:
 s consists of English letters, digits, symbols and spaces.
 
 
-Intuition:
+**Intuition:**
 
 The problem is to find the length of the longest substring without repeating characters. A sliding window approach is suitable for this problem, where we use two pointers to define the window and a frequency array to track the occurrence of characters within the window.
 
-Approach
+**Approach**
 
-Initialization:
+**Initialization:**
 
 st and end are pointers to maintain the current window.
 
@@ -45,7 +45,7 @@ strLen keeps track of the maximum length of substrings found without repeating c
 ans is a frequency array of size 256 (to accommodate all ASCII characters), initialized to 0.
 
 
-Sliding Window Mechanism:
+**Sliding Window Mechanism:******
 
 
 The end pointer expands the window by moving forward.
@@ -59,7 +59,7 @@ If it has been seen, we move the st pointer to shrink the window from the left u
 Update strLen to the maximum length of the window so far.
 
 
-Update and Return:
+**Update and Return:**
 
 
 Continue expanding the window and updating the maximum length until the end pointer reaches the end of the string.
