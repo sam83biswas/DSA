@@ -44,7 +44,9 @@ strLen keeps track of the maximum length of substrings found without repeating c
 
 ans is a frequency array of size 256 (to accommodate all ASCII characters), initialized to 0.
 
+
 Sliding Window Mechanism:
+
 
 The end pointer expands the window by moving forward.
 
@@ -56,7 +58,9 @@ If it has been seen, we move the st pointer to shrink the window from the left u
 
 Update strLen to the maximum length of the window so far.
 
+
 Update and Return:
+
 
 Continue expanding the window and updating the maximum length until the end pointer reaches the end of the string.
 
