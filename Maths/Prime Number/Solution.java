@@ -1,4 +1,4 @@
-class Main {
+class Solution {
     
     public static boolean isPrime(int num){
         for(int i = 2; i*i<=num ; i++){
