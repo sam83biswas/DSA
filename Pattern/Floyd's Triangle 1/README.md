@@ -1,4 +1,5 @@
 Print the pattern
+
 A 
 
 B C 
