@@ -1,14 +1,18 @@
-class Main {
-    public static int revNum(int num){
+class Solution {
+    public int reverse(int x) {
+
         int newNum = 0;
-        while(num>0){
-            int rem = num%10;
-            newNum = newNum*10 + rem;
-            num /= 10;
+
+        while(x != 0){
+            int dig = x%10;
+            if(newNum > Integer.MAX_VALUE/10 || newNum < Integer.MIN_VALUE/10){
+                return 0;
+            }
+            newNum = newNum*10 + dig;
+            x /= 10;
         }
+
         return newNum;
-    }
-    public static void main(String[] args) {
-        System.out.println(revNum(28912));
+        
     }
 }
